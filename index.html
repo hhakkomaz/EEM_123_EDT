@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EEM 123: Elektrik Devre Temelleri - Ders Portalı</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Slate-50 */
+            color: #0f172a; /* Slate-900 */
+        }
+        .week-card {
+            transition: all 0.3s ease;
+        }
+        .week-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Hero Section -->
+    <header class="bg-white border-b border-orange-200">
+        <div class="container mx-auto px-4 py-16 md:py-24 text-center max-w-4xl">
+            <span class="inline-block py-1 px-3 rounded-full bg-orange-100 text-orange-800 text-sm font-bold mb-4">EEM 123</span>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-slate-900 mb-6 tracking-tight">
+                Elektrik Devre<br><span class="text-orange-600">Temelleri</span>
+            </h1>
+            <p class="text-xl text-slate-600 mb-8 leading-relaxed">
+                Mühendisliğin alfabesi: Temel yasalar, DC devre analizi ve sistematik çözüm yöntemleri üzerine kapsamlı başlangıç.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#weeks" class="px-8 py-3 bg-orange-600 text-white font-bold rounded-lg hover:bg-orange-700 transition-colors shadow-lg shadow-orange-200 flex items-center justify-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd" /></svg>
+                    Derslere Başla
+                </a>
+                <a href="#syllabus" class="px-8 py-3 bg-white text-slate-700 border border-slate-300 font-bold rounded-lg hover:bg-slate-50 transition-colors">
+                    Ders Hakkında
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12 space-y-20 max-w-6xl">
+
+        <!-- Course Info Grid -->
+        <section id="syllabus" class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Objective -->
+            <div class="md:col-span-2 bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="p-2 bg-blue-100 rounded-lg text-blue-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                        </svg>
+                    </div>
+                    <h2 class="text-2xl font-bold text-slate-800">Dersin Amacı</h2>
+                </div>
+                <p class="text-slate-600 leading-relaxed">
+                    Bu dersin amacı, elektrik mühendisliğinin temeli olan devre teorisi kavramlarını, temel yasaları ve analiz yöntemlerini öğretmektir. Öğrencilerin elektriksel büyüklükleri tanımlamaları, devre elemanlarının davranışlarını kavramaları ve sistematik analiz tekniklerini (Düğüm ve Çevre Yöntemleri) kullanarak doğru akım (DC) devrelerini analiz etmeleri hedeflenir. Ders, analitik düşünme ve problem çözme yeteneklerinin geliştirilmesine odaklanır.
+                </p>
+            </div>
+
+            <!-- Resources -->
+            <div class="bg-slate-800 text-slate-300 p-8 rounded-2xl shadow-sm">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="p-2 bg-slate-700 rounded-lg text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                        </svg>
+                    </div>
+                    <h2 class="text-2xl font-bold text-white">Kaynaklar</h2>
+                </div>
+                <ul class="space-y-4 text-sm">
+                    <li>
+                        <strong class="block text-white">Ana Kaynak:</strong>
+                        Elektrik Devreleri (Nilsson & Riedel)
+                    </li>
+                    <li class="border-t border-slate-600 pt-4">
+                        <strong class="block text-white">Yardımcı Kaynaklar:</strong>
+                        <span class="block text-slate-400 text-xs mt-1">• Elektrik Devreleri 1 (Şerafettin Özbey)</span>
+                        <span class="block text-slate-400 text-xs mt-1">• Doğru Akım Devreleri (M. Yağımlı & F. Akar)</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Weekly Modules -->
+        <section id="weeks">
+            <div class="flex items-center justify-between mb-8">
+                <h2 class="text-3xl font-bold text-slate-900">Haftalık Ders İçeriği</h2>
+                <span class="bg-orange-100 text-orange-800 text-xs font-bold px-3 py-1 rounded-full">14 Hafta</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- BÖLÜM 1: TEMEL KAVRAMLAR -->
+                <div class="md:col-span-2 lg:col-span-3 mt-4 mb-2">
+                    <h3 class="text-sm font-bold text-slate-400 uppercase tracking-wider">Bölüm 1: Giriş ve Temel Kavramlar</h3>
+                </div>
+
+                <!-- WEEK 1 -->
+                <a href="hafta1.html" class="week-card group block bg-white border-l-4 border-orange-500 rounded-r-xl shadow-sm p-6 relative overflow-hidden">
+                    <div class="absolute top-4 right-4 bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded">BAŞLA</div>
+                    <span class="text-xs font-bold text-slate-400 block mb-2">1. HAFTA</span>
+                    <h3 class="text-xl font-bold text-slate-800 mb-2 group-hover:text-orange-600 transition-colors">Birimler ve Temel Büyüklükler</h3>
+                    <p class="text-sm text-slate-500 line-clamp-2">SI birim sistemi, Elektrik Yükü, Akım, Gerilim, Güç ve Enerji kavramları.</p>
+                </a>
+
+                <!-- WEEK 2 -->
+                <a href="hafta2.html" class="week-card group block bg-white border border-slate-200 rounded-xl shadow-sm p-6 hover:border-orange-300">
+                    <span class="text-xs font-bold text-slate-400 block mb-2">2. HAFTA</span>
+                    <h3 class="text-xl font-bold text-slate-800 mb-2 group-hover:text-orange-600 transition-colors">Temel Elektriksel Büyüklükler</h3>
+                    <p class="text-sm text-slate-500 line-clamp-2">Akım ve gerilim yönleri, pasif işaret kuralı, güç hesabı ve enerji korunumunun temelleri.</p>
+                </a>
+
+                <!-- WEEK 3 -->
+                <a href="hafta3.html" class="week-card group block bg-white border border-slate-200 rounded-xl shadow-sm p-6 hover:border-orange-300">
+                    <span class="text-xs font-bold text-slate-400 block mb-2">3. HAFTA</span>
+                    <h3 class="text-xl font-bold text-slate-800 mb-2 group-hover:text-orange-600 transition-colors">Devre Elemanları</h3>
+                    <p class="text-sm text-slate-500 line-clamp-2">Aktif ve Pasif elemanlar, Bağımlı ve Bağımsız kaynaklar (Voltaj/Akım).</p>
+                </a>
+
+                 <!-- WEEK 4 -->
+                 <a href="hafta4.html" class="week-card group block bg-white border border-slate-200 rounded-xl shadow-sm p-6 hover:border-orange-300">
+                    <span class="text-xs font-bold text-slate-400 block mb-2">4. HAFTA</span>
+                    <h3 class="text-xl font-bold text-slate-800 mb-2 group-hover:text-orange-600 transition-colors">Problem Çözme Teknikleri</h3>
+                    <p class="text-sm text-slate-500 line-clamp-2">Devre problemlerine yaklaşım, analiz stratejileri ve mühendislik yaklaşımı.</p>
+                </a>
+
+                <!-- BÖLÜM 2: TEMEL YASALAR -->
+                <div class="md:col-span-2 lg:col-span-3 mt-8 mb-2 border-t border-slate-200 pt-8">
+                    <h3 class="text-sm font-bold text-slate-400 uppercase tracking-wider">Bölüm 2: Temel Yasalar ve Basit Devreler</h3>
+                </div>
+
+                <!-- WEEK 5 -->
+                <a href="hafta5.html" class="week-card group block bg-white border border-slate-200 rounded-xl shadow-sm p-6 hover:border-orange-300">
+                    <span class="text-xs font-bold text-slate-400 block mb-2">5. HAFTA</span>
+                    <h3 class="text-xl font-bold text-slate-800 mb-2 group-hover:text-orange-600 transition-colors">Ohm Yasası ve Topoloji</h3>
+                    <p class="text-sm text-slate-500 line-clamp-2">Ohm kanunu, düğüm (node), dal (branch) ve çevre (loop) kavramları.</p>
+                </a>
+
+                <!-- WEEK 6 -->
+                <a href="hafta6.html" class="week-card group block bg-white border border-slate-200 rounded-xl shadow-sm p-6 hover:border-orange-300">
+                    <span class="text-xs font-bold text-slate-400 block mb-2">6. HAFTA</span>
+                    <h3 class="text-xl font-bold text-slate-800 mb-2 group-hover:text-orange-600 transition-colors">Kirchhoff Yasaları</h3>
+                    <p class="text-sm text-slate-500 line-clamp-2">Kirchhoff'un Akım Yasası (KCL) ve Gerilim Yasası (KVL).</p>
+                </a>
+
+                <!-- WEEK 7 -->
+                <a href="hafta7.html" class="week-card group block bg-white border border-slate-200 rounded-xl shadow-sm p-6 hover:border-orange-300">
+                    <span class="text-xs font-bold text-slate-400 block mb-2">7. HAFTA</span>
+                    <h3 class="text-xl font-bold text-slate-800 mb-2 group-hover:text-orange-600 transition-colors">Seri Dirençler</h3>
+                    <p class="text-sm text-slate-500 line-clamp-2">Seri bağlı dirençler, eşdeğer direnç ve Gerilim Bölme kuralı.</p>
+                </a>
+
+                <!-- WEEK 9 -->
+                <a href="hafta9.html" class="week-card group block bg-white border border-slate-200 rounded-xl shadow-sm p-6 hover:border-orange-300">
+                    <span class="text-xs font-bold text-slate-400 block mb-2">9. HAFTA</span>
+                    <h3 class="text-xl font-bold text-slate-800 mb-2 group-hover:text-orange-600 transition-colors">Paralel Dirençler</h3>
+                    <p class="text-sm text-slate-500 line-clamp-2">Paralel bağlı dirençler, eşdeğer iletkenlik ve Akım Bölme kuralı.</p>
+                </a>
+
+                 <!-- WEEK 10 -->
+                 <a href="hafta10.html" class="week-card group block bg-white border border-slate-200 rounded-xl shadow-sm p-6 hover:border-orange-300">
+                    <span class="text-xs font-bold text-slate-400 block mb-2">10. HAFTA</span>
+                    <h3 class="text-xl font-bold text-slate-800 mb-2 group-hover:text-orange-600 transition-colors">Yıldız-Üçgen Dönüşümleri</h3>
+                    <p class="text-sm text-slate-500 line-clamp-2">Y (T) ve Δ (Π) devreleri arasında direnç dönüşüm formülleri ve uygulamaları.</p>
+                </a>
+
+                <!-- BÖLÜM 3: SİSTEMATİK ANALİZ -->
+                <div class="md:col-span-2 lg:col-span-3 mt-8 mb-2 border-t border-slate-200 pt-8">
+                    <h3 class="text-sm font-bold text-slate-400 uppercase tracking-wider">Bölüm 3: Sistematik Analiz Yöntemleri</h3>
+                </div>
+
+                <!-- WEEK 11 -->
+                <a href="hafta11.html" class="week-card group block bg-white border border-slate-200 rounded-xl shadow-sm p-6 hover:border-orange-300">
+                    <span class="text-xs font-bold text-slate-400 block mb-2">11. HAFTA</span>
+                    <h3 class="text-xl font-bold text-slate-800 mb-2 group-hover:text-orange-600 transition-colors">Düğüm Analizi: Temel</h3>
+                    <p class="text-sm text-slate-500 line-clamp-2">Düğüm gerilimleri yöntemi, referans düğüm seçimi ve KCL denklemleri.</p>
+                </a>
+
+                <!-- WEEK 12 -->
+                <a href="hafta12.html" class="week-card group block bg-white border border-slate-200 rounded-xl shadow-sm p-6 hover:border-orange-300">
+                    <span class="text-xs font-bold text-slate-400 block mb-2">12. HAFTA</span>
+                    <h3 class="text-xl font-bold text-slate-800 mb-2 group-hover:text-orange-600 transition-colors">Düğüm Analizi: Süper Düğüm</h3>
+                    <p class="text-sm text-slate-500 line-clamp-2">Gerilim kaynakları içeren devrelerde Süper Düğüm (Supernode) kavramı.</p>
+                </a>
+
+                <!-- WEEK 13 -->
+                <a href="hafta13.html" class="week-card group block bg-white border border-slate-200 rounded-xl shadow-sm p-6 hover:border-orange-300">
+                    <span class="text-xs font-bold text-slate-400 block mb-2">13. HAFTA</span>
+                    <h3 class="text-xl font-bold text-slate-800 mb-2 group-hover:text-orange-600 transition-colors">Çevre Analizi: Temel</h3>
+                    <p class="text-sm text-slate-500 line-clamp-2">Çevre akımları (Mesh) yöntemi ve KVL denklemlerinin matris formunda yazımı.</p>
+                </a>
+
+                <!-- WEEK 14 -->
+                <a href="hafta14.html" class="week-card group block bg-white border border-slate-200 rounded-xl shadow-sm p-6 hover:border-orange-300">
+                    <span class="text-xs font-bold text-slate-400 block mb-2">14. HAFTA</span>
+                    <h3 class="text-xl font-bold text-slate-800 mb-2 group-hover:text-orange-600 transition-colors">Çevre Analizi: Süper Çevre</h3>
+                    <p class="text-sm text-slate-500 line-clamp-2">Akım kaynakları içeren devrelerde Süper Çevre (Supermesh) kavramı.</p>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- Outcomes Section -->
+        <section class="bg-orange-900 rounded-2xl p-8 md:p-12 shadow-lg mt-12 text-white">
+            <h2 class="text-2xl font-bold mb-8 flex items-center gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-orange-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                Öğrenim Çıktıları
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="flex items-start gap-3">
+                    <div class="mt-1 min-w-[20px] h-5 rounded-full bg-orange-500 flex items-center justify-center text-xs">✓</div>
+                    <p class="text-orange-100">Elektrik yükü, akım, gerilim, güç ve enerji kavramlarını tanımlar ve hesaplar.</p>
+                </div>
+                <div class="flex items-start gap-3">
+                    <div class="mt-1 min-w-[20px] h-5 rounded-full bg-orange-500 flex items-center justify-center text-xs">✓</div>
+                    <p class="text-orange-100">Ohm Yasası ve Kirchhoff Yasalarını (KCL, KVL) kullanarak devre denklemlerini oluşturur.</p>
+                </div>
+                <div class="flex items-start gap-3">
+                    <div class="mt-1 min-w-[20px] h-5 rounded-full bg-orange-500 flex items-center justify-center text-xs">✓</div>
+                    <p class="text-orange-100">Seri-paralel dirençler, gerilim ve akım bölücü kurallarını uygular.</p>
+                </div>
+                <div class="flex items-start gap-3">
+                    <div class="mt-1 min-w-[20px] h-5 rounded-full bg-orange-500 flex items-center justify-center text-xs">✓</div>
+                    <p class="text-orange-100">Yıldız-Üçgen (Y-Δ) dönüşümlerini kullanarak karmaşık direnç ağlarını sadeleştirir.</p>
+                </div>
+                <div class="flex items-start gap-3">
+                    <div class="mt-1 min-w-[20px] h-5 rounded-full bg-orange-500 flex items-center justify-center text-xs">✓</div>
+                    <p class="text-orange-100">Düğüm Gerilimleri (Nodal Analysis) ve Çevre Akımları (Mesh Analysis) yöntemleri ile devreleri analiz eder.</p>
+                </div>
+                <div class="flex items-start gap-3">
+                    <div class="mt-1 min-w-[20px] h-5 rounded-full bg-orange-500 flex items-center justify-center text-xs">✓</div>
+                    <p class="text-orange-100">Farklı analiz yöntemlerini karşılaştırarak verilen bir problem için en uygun yöntemi seçer.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-slate-50 border-t border-slate-200 mt-20">
+        <div class="container mx-auto px-4 py-8 text-center text-slate-500">
+            <p>&copy; 2026 EEM 123 Elektrik Devre Temelleri</p>
+            <p class="text-xs mt-2">Bu portal ders materyallerine erişim amacıyla hazırlanmıştır.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
